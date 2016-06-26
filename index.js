@@ -35,7 +35,7 @@ restService.post('/hook', function (req, res) {
 
 //        console.log('data : {"facebook": {<facebook_message>}}')
 
-/*
+
 > >  	var facebook_message = [ 
 		  {
 > > > >     attachment :{
@@ -69,12 +69,15 @@ restService.post('/hook', function (req, res) {
 > > > >       }
 > > > >     }
 > > >     }
-		]
-*/
+		];
+
+
+		var facebook_message = "";
+
         return res.json({
             speech: speech,
             displayText: speech,
-            //data : {"facebook": facebook_message},
+            data : {"facebook": {facebook_message}},
             source: 'apiai-webhook-sample'
         });
     } catch (err) {
