@@ -73,7 +73,7 @@ restService.post('/hook', function (req, res) {
         return res.json({
             speech: speech,
             displayText: speech,
-            data : {"facebook": facebook_message},
+            //data : {"facebook": facebook_message},
             source: 'apiai-webhook-sample'
         });
     } catch (err) {
