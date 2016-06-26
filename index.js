@@ -35,6 +35,7 @@ restService.post('/hook', function (req, res) {
 
 //        console.log('data : {"facebook": {<facebook_message>}}')
 
+/*
 > >  	var facebook_message = [ 
 		  {
 > > > >     attachment :{
@@ -69,7 +70,7 @@ restService.post('/hook', function (req, res) {
 > > > >     }
 > > >     }
 		]
-
+*/
         return res.json({
             speech: speech,
             displayText: speech,
